@@ -1,5 +1,5 @@
 <template>
-  <v-layout class="grey lighten-3 mx-auto pa-3" style="width: 500px;">
+  <v-layout class="grey lighten-3 mx-auto pa-3 add-review-form">
     <v-flex xs-12>
       <v-text-field
         :error-messages="errors.collect('name')"
@@ -50,5 +50,9 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+.add-review-form {
+  width: 100%;
+  max-width: 500px;
+}
 </style>
